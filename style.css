@@ -12,34 +12,51 @@ body {
 
 /* Add styles here! */
 header{
-  min-height:50%;
-  border-bottom:8px solid hsl(0deg, 0%, 40%);
-  
+  /* min-height:50%; */
+}
+.title{
+ margin-bottom:64px; 
+}
+header p{
+  font-size:1.5rem;
+  line-height:1.5;
+  /* width:fit-content; */
+  max-width:400px;
 }
 main{
-  min-height:50%;
+  /* min-height:50%; */
   background-color:hsl(0deg, 0%, 60%);
+  border-top:8px solid hsl(0deg, 0%, 40%);
+  padding-bottom:96px;
+}
+main p{
+  font-size:1.25rem;
+  line-height:1.5;
   
 }
 .max-width-wrapper{
-  max-width:672px;
+  max-width:720px;
   margin:0 auto;
+  
 }
 .intro-chunk{
-
+  margin:128px 0 64px;
 }
 strong{
   color:hsl(160deg, 100%, 30%);
 }
-.title{
-  
-}
+
 .card{
+  padding:24px;
+  margin:96px -24px;
+  
   background:hsl(0deg, 0%, 100%);
   border-bottom:8px solid hsl(0deg, 0%, 40%);  
 }
 .indented-heading{
-  margin:0;
+  font-size:1.5rem;
+  margin:-16px 0 0 -32px;
+  padding:24px 32px;
   background:hsl(45deg, 100%, 50%);
   width:max-content;
   border-bottom:8px solid hsl(45deg, 100%, 40%);
