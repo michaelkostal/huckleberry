@@ -35,9 +35,10 @@ main p{
   
 }
 .max-width-wrapper{
+  
   max-width:720px;
   margin:0 auto;
-  
+  padding:24px;
 }
 .intro-chunk{
   margin:128px 0 64px;
@@ -55,9 +56,28 @@ strong{
 }
 .indented-heading{
   font-size:1.5rem;
-  margin:-16px 0 0 -32px;
-  padding:24px 32px;
+  margin:0;
+  padding:24px;
   background:hsl(45deg, 100%, 50%);
-  width:max-content;
+  display:inline-block;
+  width:fit-content;
   border-bottom:8px solid hsl(45deg, 100%, 40%);
+}
+@media(min-width:767px){
+  .indented-heading{
+    width:max-content;
+    padding:24px;
+    margin:-16px 0 0 -24px;
+  }
+  .max-width-wrapper{
+    padding:0;
+  }
+}
+@media(min-width:992px){
+  .indented-heading{
+    width:max-content;
+    padding-left:40px;
+    padding-right:40px;
+    margin-left:-40px;
+  }
 }
